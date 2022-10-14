@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Добро пожаловать</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <style>
+        body{ font: 14px sans-serif; text-align: center; }
+    </style>
+ <script language="javascript"> 
+ 	const createobj1 = new createobj();
+
+ 	const usl = [];
+
+ 	function obj(a,b,c) {
+ 		this.name = a;
+ 		this.desc = b;
+ 		this.price = c;
+
+ 	}
+function createobj() {
+	this.create = function(a,b,c) {
+		return new obj(a,b,c);
+	}
+}
+
+function func1() {
+	
+ 		usl.forEach( vehicle => {
+   print.call(vehicle);
+});
+}
+
+function print() {
+   
+   console.log("Name: " + this.name);
+   console.log("Type: " + this.desc);
+   console.log("price: " + this.price);
+   
+}
+
+ 	function func () {
+ 	var result = '';
+ 	var desc = '';
+ 	var price = '';
+ result = prompt('Введите название услгуи','Название объекта');
+ if (result != 'Название объекта') {
+ 	desc = prompt('Введите описание услуги','Описание услуги');
+ 	if (desc != 'описание услуги'); {
+ 		price = prompt('Введите стоимость услуги','стоимость услуги');
+ 		if (price != 'стоимость услуги'); {
+ 		alert ('Услуга - '+result+', описание: '+desc+', стоимость - '+price+'.');
+ 		usl.push(createobj1.create(result,desc,price));
+
+
+ 	}
+ 	}
+ }
+ }
+
+
+</script>
+</head>
+<body>
+	   
+    
+    
+     
+                <button id="myBtn" onclick="func();">Создать услугу</button>  
+                <button id="myBtn1" onclick="func1();">Все услуги</button> 
+            
+     
+</body>
+</html>
